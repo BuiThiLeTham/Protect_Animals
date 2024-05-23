@@ -67,8 +67,223 @@
     --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
   
   }
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+img,
+span,
+time,
+input,
+strong,
+button,
+ion-icon { display: block; }
+
+img { height: auto; }
+
+ion-icon { pointer-events: none; }
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+:focus-visible { outline-offset: 4px; }
+
+::selection { background-color: var(--white_10); }
+
+html {
+  font-family: var(--ff-roboto);
+  color: var(--granite-gray);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--eerie-black-1);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  overflow-x: 300vh;
+}
+
+::-webkit-scrollbar { width: 13px; }
+
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 95%); }
+
+::-webkit-scrollbar-thumb { background-color: var(--pistachio); }
   
-/* Phần đầu: Header */
+/*--------------------------------- Phần đầu: Header -------------------------*/
 .lang-switch,
-.navbar,
-header
+
+.header-action { display: none;};
+
+.header{
+    position: fixed;  /* Thiết lập phần tử ở vị trí cố định so với cửa sổ trình duyệt. Phần tử này sẽ luôn ở cùng một vị trí ngay cả khi bạn cuộn trang. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Đặt màu nền của phần tử là trong suốt. */
+    padding-block: 18px;   /* Thiết lập khoảng cách đệm trên và dưới của phần tử */
+    z-index: 4;    /* Thuộc tính này điều chỉnh thứ tự xếp chồng của phần tử, tức là phần tử nào có z-index cao hơn sẽ nằm trên phần tử có z-index thấp hơn. */
+}
+/* ::after chèn nội dung vào sau nội dung của một phần tử */
+.header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 140px);  /*  Điều này giúp bạn tạo khoảng cách đều hai bên của đường kẻ. */
+    height: 1px;
+    background-color: var(--white_10);
+   
+}
+
+.header.active{
+    background-color: var(--eerie-black-1);
+    box-shadow:  0 0 10px hsla(0, 0%, 100%, 0.8);
+}
+.header .container{
+    display: flex;/* Thiết lập phần tử này là một container Flexbox */
+    justify-content: space-between;
+    align-items:  center;
+    gap: 50px;   /* Thiết lập khoảng cách giữa các mục flex. Trong trường hợp này, mỗi mục flex sẽ có khoảng cách 50px so với mục flex liền kề. */
+}
+
+.logo {
+    color: var(--white);
+    font-size: 3.2rem;
+    font-family: var(--ff-oswald);
+    text-transform: uppercase;
+
+}
+.nav-open-btn{
+    color: var(--white);
+    font-size: 3.8rem;
+
+}
+
+.navbar{
+    position: fixed;
+    background-color: var(--eerie-black-1);
+    top:100% ;
+    left: 0; /* Đặt phần tử ở cạnh trái của cửa sổ trình duyệt. */
+    width: 100%;
+    height: 100%;
+    outline: 1px solid var(--white_10); /* Thêm một viền ngoài (outline) cho phần tử với độ dày 1px */
+    display: flex;
+    flex-direction: column; /* Đặt hướng của các mục flex là theo cột, nghĩa là các mục flex sẽ xếp chồng lên nhau theo chiều dọc. */
+    z-index: 1;
+    visibility: hidden; /* Phần tử sẽ bị ẩn khỏi màn hình. Thuộc tính này có thể được thay đổi bằng JavaScript hoặc CSS để hiển thị phần tử. */
+    transition: 0.25s var(--cubic-in); /* Thiết lập hiệu ứng chuyển tiếp cho các thay đổi về thuộc tính: 0.25s */
+
+}
+.navbar.active {
+    transform: translateY(-100%);
+    visibility: visible;/*  hiển thị phần tử đó. */
+    transition: 0.5s var(--cubic-out); 
+}
+
+.nar-close-btn {
+    color: var(--white);
+    font-size: 24.rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.nar-close-btn ion-icon {
+   --ionicon-stroke-width: 60px; 
+    /* Đặt giá trị của biến CSS --ionicon-stroke-width là 60px. Biến này được Ionicons sử dụng để điều chỉnh độ rộng của nét vẽ của các biểu tượng. */
+}
+
+.navbar > .logo{  /* Chọn phần tử có lớp .logo là con trực tiếp của phần tử có lớp .navbar. */
+    font-size: 4rem;
+    width: max-content; /* Đặt chiều rộng của phần tử vừa đủ để chứa nội dung bên trong nó.  */
+    margin-inline: auto ; /*  Căn giữa phần tử theo chiều ngang. */
+    margin-block-start: 50px;  /* tương đương với margin-top trong ngữ cảnh viết từ trái sang phải (ltr). */
+}
+.navbar-list {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    /* Thiết lập các lề tự động để căn giữa phần tử.  */
+    padding-inline: 10px;
+    opacity: 0;
+    /* Đặt độ mờ của phần tử là 0. Phần tử sẽ không hiển thị trên trang web vì nó là không thể nhìn thấy. */
+    transition: 0.5s ease;
+    /* hiệu ứng chuyển tiếp sẽ mượt mà trong 0.5 giây với hàm chuyển đổi là ease, tạo hiệu ứng chuyển đổi tự nhiên và mềm mại. */
+    transition-delay: 0s;
+    /* Thiết lập độ trễ cho hiệu ứng chuyển tiếp. */
+  }
+  
+  .navbar.active .navbar-list {
+    opacity: 1;
+    /* xác định độ mờ của phần tử. */
+    transition-delay: 0.25s;
+  }
+  
+  .navbar-link {
+    color: var(--white);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-500);
+    text-transform: uppercase;
+    /* Chuyển đổi toàn bộ văn bản trong phần tử thành chữ in hoa. */
+    display: flex;
+    justify-content: space-between;
+    /* Căn các phần tử con bên trong theo chiều ngang sao cho chúng được phân bố đều với khoảng trống giữa các phần tử. */
+    align-items: center;
+    padding-inline: 10px 15px;
+    padding-block: 8px;
+    transition: var(--transition-1);
+    /* Thiết lập hiệu ứng chuyển tiếp */
+  }
+  
+  .navbar-link:is(:hover, :focus) { background-color: var(--pistachio); }
+  
+  
+  
+/* ------------------REUSED STYLE ------------------*/
+
+.container{
+    padding-inline: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
