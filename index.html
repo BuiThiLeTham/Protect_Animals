@@ -1,233 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wildvine - Trao yêu thương để cứu động vật thế giới</title>
 
-  <!-- liên kết đến favicon: tao logo tren dau wweb -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> 
+    <!-- liên kết đến favicon: tao logo tren dau wweb -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!--link CSS-->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!--link CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--liên kết đến các font chữ từ Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
-    rel="stylesheet">
+    <!--liên kết đến các font chữ từ Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- Phần đầu header -->
-    <header class="header" data-header>  
-        <!-- data-header: Đây là một thuộc tính dữ liệu tùy chỉnh, Nó có thể được sử dụng bởi JavaScript để thao tác hoặc lấy thông tin từ phần tử này. -->
-        <div class="container">
-            <h1>
-                <a href="#" class="logo">Hoang Dã</a>
-            </h1>
-            <select name="language" class="lang-switch">
-                <option value="english">English</option>
-                <option value="french">French</option>
-                <option value="spanish">Spanish</option>
-            </select>
+    <header class="header" data-header>
+      <!-- data-header: Đây là một thuộc tính dữ liệu tùy chỉnh, Nó có thể được sử dụng bởi JavaScript để thao tác hoặc lấy thông tin từ phần tử này. -->
+      <div class="container">
+        <h1>
+          <a href="#" class="logo">Hoang Dã</a>
+        </h1>
+        <select name="language" class="lang-switch">
+          <option value="english">English</option>
+          <option value="french">French</option>
+          <option value="spanish">Spanish</option>
+        </select>
 
-            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
 
-            <nav class="navbar" data-navbar>
-                <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-                    <ion-icon name="close-outline"></ion-icon>
-                </button>
+        <nav class="navbar" data-navbar>
+          <button
+            class="nav-close-btn"
+            aria-label="Close Menu"
+            data-nav-close-btn
+          >
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
 
-                <a href="#" class="logo">Hoang Da</a>
+          <a href="#" class="logo">Hoang Da</a>
 
-                <ul class="navbar-list">
-                    <li>
-                        <a href="#home" class="navbar-link" data-nav-link>
-                          <span>Home</span>
-            
-                          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                        </a>
-                      </li>
-            
-                      <li>
-                        <a href="#about" class="navbar-link" data-nav-link>
-                          <span>About</span>
-            
-                          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                        </a>
-                      </li>
-            
-                      <li>
-                        <a href="#service" class="navbar-link" data-nav-link>
-                          <span>Service</span>
-            
-                          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                        </a>
-                      </li>
-            
-                      <li>
-                        <a href="#donate" class="navbar-link" data-nav-link>
-                          <span>Donate</span>
-            
-                          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                        </a>
-                      </li>
-            
-                      <li>
-                        <a href="#event" class="navbar-link" data-nav-link>
-                          <span>Event</span>
-            
-                          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                        </a>
-                      </li>
-            
-                      <li>
-                        <a href="#" class="navbar-link" data-nav-link>
-                          <span>Contact</span>
-            
-                          <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-                        </a>
-                      </li>
-                </ul>
-            </nav>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>
+                <span>Home</span>
 
-            <div class="header-action">
-                <button class="search-btn" aria-label="Search">
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
+                <ion-icon
+                  name="chevron-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </li>
 
-                <button class="btn btn-primary">
-                    <span>Quyên Tặng</span>
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>
+                <span>About</span>
 
-                    <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                </button>
-            </div>
+                <ion-icon
+                  name="chevron-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </li>
 
+            <li>
+              <a href="#service" class="navbar-link" data-nav-link>
+                <span>Service</span>
+
+                <ion-icon
+                  name="chevron-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#donate" class="navbar-link" data-nav-link>
+                <span>Donate</span>
+
+                <ion-icon
+                  name="chevron-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#event" class="navbar-link" data-nav-link>
+                <span>Event</span>
+
+                <ion-icon
+                  name="chevron-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>
+                <span>Contact</span>
+
+                <ion-icon
+                  name="chevron-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-action">
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <button class="btn btn-primary">
+            <span>Quyên Tặng</span>
+
+            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+          </button>
         </div>
+      </div>
     </header>
-
 
     <main>
       <article>
-  
         <!-- #HERO-->
         <section class="hero" id="home">
           <div class="container">
-  
             <p class="section-subtitle">
-              <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
-  
+              <img
+                src="./assets/images/subtitle-img-white.png"
+                width="32"
+                height="7"
+                alt="Wavy line"
+              />
+
               <span>Chào Mừng Bạn Đến Với Wildvine</span>
             </p>
-  
+
             <h2 class="h1 hero-title">
-              Lan Tỏa Yêu Thương Để Bảo Vệ <strong> Động Vật Khắp Thế Giới </strong>
+              Lan Tỏa Yêu Thương Để Bảo Vệ
+              <strong> Động Vật Khắp Thế Giới </strong>
             </h2>
-  
+
             <p class="hero-text">
-              Chúng tôi cam kết bảo vệ động vật hoang dã và tạo môi trường an toàn cho tất cả các loài.
-              Sứ mệnh của chúng tôi là nâng cao nhận thức và khuyến khích cộng đồng tham gia bảo vệ môi trường. 
-              Hãy cùng nhau hành động để bảo vệ thiên nhiên cho tương lai.
+              Chúng tôi cam kết bảo vệ động vật hoang dã và tạo môi trường an
+              toàn cho tất cả các loài. Sứ mệnh của chúng tôi là nâng cao nhận
+              thức và khuyến khích cộng đồng tham gia bảo vệ môi trường. Hãy
+              cùng nhau hành động để bảo vệ thiên nhiên cho tương lai.
             </p>
-  
+
             <button class="btn btn-primary">
               <span>Quyên tặng</span>
-  
+
               <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
             </button>
-  
           </div>
         </section>
-  
-      <!-- #FEATURES-->
-  
+
+        <!-- #FEATURES-->
+
         <section class="section features">
           <div class="container">
-  
             <ul class="features-list">
-  
               <li class="features-item">
                 <div class="item-icon">
                   <ion-icon name="shield-checkmark-outline"></ion-icon>
                 </div>
-  
+
                 <div>
                   <h3 class="h4 item-title">Nơi Ở An Toàn</h3>
-  
+
                   <p class="item-text">
-                    Chúng tôi sẽ tạo ra một nơi cung cấp một môi trường ổn định và bảo vệ, 
-                    nơi mà các loài động vật có thể tìm kiếm nơi trú ẩn an toàn trong tự nhiên.
+                    Chúng tôi sẽ tạo ra một nơi cung cấp một môi trường ổn định
+                    và bảo vệ, nơi mà các loài động vật có thể tìm kiếm nơi trú
+                    ẩn an toàn trong tự nhiên.
                   </p>
                 </div>
               </li>
-  
+
               <li class="features-item">
                 <div class="item-icon">
                   <ion-icon name="water-outline"></ion-icon>
                 </div>
-  
+
                 <div>
                   <h3 class="h4 item-title">Nguồn Nước Sạch Và An Toàn</h3>
-  
+
                   <p class="item-text">
-                    Nguồn nước được xử lý và kiểm soát chặt chẽ để đảm bảo an toàn và sạch sẽ cho sức khỏe của các loài động vật.
+                    Nguồn nước được xử lý và kiểm soát chặt chẽ để đảm bảo an
+                    toàn và sạch sẽ cho sức khỏe của các loài động vật.
                   </p>
                 </div>
               </li>
-  
+
               <li class="features-item">
                 <div class="item-icon">
                   <ion-icon name="leaf-outline"></ion-icon>
                 </div>
-  
+
                 <div>
                   <h3 class="h4 item-title">Bảo Vệ Sinh thái</h3>
-  
+
                   <p class="item-text">
-                    Chúng tôi không chỉ tập trung vào việc cứu trợ và chăm sóc cho các loài động vật hoang dã cần giúp đỡ,
-                    mà còn đặt mục tiêu lớn hơn là duy trì cân bằng sinh thái và bảo vệ sự đa dạng sinh học của hành tinh.
+                    Chúng tôi không chỉ tập trung vào việc cứu trợ và chăm sóc
+                    cho các loài động vật hoang dã cần giúp đỡ, mà còn đặt mục
+                    tiêu lớn hơn là duy trì cân bằng sinh thái và bảo vệ sự đa
+                    dạng sinh học của hành tinh.
                   </p>
                 </div>
               </li>
-  
+
               <li class="features-item">
                 <div class="item-icon">
                   <ion-icon name="snow-outline"></ion-icon>
                 </div>
-  
+
                 <div>
                   <h3 class="h4 item-title">Môi Trường</h3>
-  
+
                   <p class="item-text">
-                    Chúng tôi sẽ phục hồi môi trường sống của chúng, từ việc bảo tồn rừng đến giảm thiểu ô nhiễm môi trường. 
-                    Mục tiêu là tạo ra một môi trường cân bằng và lành mạnh để các loài động vật có thể sống và phát triển một cách bền vững.
+                    Chúng tôi sẽ phục hồi môi trường sống của chúng, từ việc bảo
+                    tồn rừng đến giảm thiểu ô nhiễm môi trường. Mục tiêu là tạo
+                    ra một môi trường cân bằng và lành mạnh để các loài động vật
+                    có thể sống và phát triển một cách bền vững.
                   </p>
                 </div>
               </li>
-  
             </ul>
-  
           </div>
         </section>
+
+<!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+
+            <h2 class="deco-title">Về chúng tôi</h2>
+
+            <img src="./assets/images/deco-img.png" width="58" height="261" alt="" class="deco-img">
+
+            <div class="banner-row">
+
+              <div class="banner-col">
+                <img src="./assets/images/about-banner-1.jpg" width="315" height="380" loading="lazy" alt="Tiger"
+                  class="about-img w-100">
+
+                <img src="./assets/images/about-banner-2.jpg" width="386" height="250" loading="lazy" alt="Panda"
+                  class="about-img about-img-2 w-100">
+              </div>
+
+              <div class="banner-col">
+                <img src="./assets/images/about-banner-3.jpg" width="250" height="277" loading="lazy" alt="Elephant"
+                  class="about-img about-img-3 w-100">
+
+                <img src="./assets/images/about-banner-4.jpg" width="315" height="380" loading="lazy" alt="Deer"
+                  class="about-img w-100">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">
+              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+              <span>Tại sao lại chọn chúng tôi</span>
+            </p>
+
+            <h2 class="h2 section-title">
+                Giơ tay lên để cứu<strong> Cuộc sống động vật trên thế giới</strong>
+            </h2>
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Nhiệm vụ của chúng tôi</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Tầm nhìn của chúng tôi</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Chiến lược tương lai</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content">
+
+              <p class="section-text">
+                Nhưng tôi phải giải thích cho bạn biết làm thế nào mọi sự lầm lạc này về niềm vui và sự đau đớn đã được sinh ra và tôi sẽ cung cấp cho bạn
+                một tài khoản đầy đủ về hệ thống expoundmaster
+              </p>
+
+              <ul class="tab-list">
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                  <p class="tab-text">Từ thiện đồ ăn</p>
+                </li>
+
+                <li class="tab-item">
+                  <div class="item-icon">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </div>
+
+                    <p class="tab-text">Ủng hộ Giáo dục</p>
+                  </li>
+
+                  <li class="tab-item"></li>
+                    <div class="item-icon"></div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <p class="tab-text">Ủng hộ Nước sạch</p>
+                  </li>
+
+                  <li class="tab-item">
+                    <div class="item-icon"></div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+
+                    <p class="tab-text">Ủng hộ Y tế</p>
+                  </li>
+
+                  </ul>
+
+                  <button class="btn btn-secondary"></button>
+                  <span>Tìm hiểu thêm về chúng tôi</span>
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+            <div class="cta-content"></div>
+            <h2 class="h2 section-title">324+ Đối tác Toàn cầu Đáng tin cậy</h2>
+
+            <button class="btn btn-outline">
+              <span>Trở thành Đối tác</span>
+
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            </button>
+            </div>
+
+          <figure class="cta-banner">
+            <img src="./assets/images/cta-banner.jpg" width="520" height="228" loading="lazy" alt="Fox"
+              class="img-cover">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" style="background-image: url('./assets/images/service-map.png')">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>Chúng tôi làm gì</span>
+            </p>
+         </p>
+            <h2 class="h2 section-title">
+          <h2 class="h2 section-title">
+            Chúng tôi làm những điều khác biệt <strong>để giữ Thế Giới Sạch Đẹp</strong>
+          </h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Giải cứu thiên nhiên</h3>
+
+                <p class="card-text">
+                  Hãy cùng nhau bảo vệ môi trường, trồng cây và giữ gìn nguồn nước.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="earth-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Giải cứu hệ sinh thái</h3>
+
+                <p class="card-text">
+                  Bảo vệ đa dạng sinh học, không sử dụng hóa chất độc hại và hỗ trợ các dự án bảo tồn.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Xem thêm</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="flower-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Trồng cây</h3>
+
+                <p class="card-text">
+                  Tái tạo hệ sinh thái và giữ gìn nguồn nước.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Read More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Dọn sạch biển</h3>
+
+                <p class="card-text">
+                  Bảo vệ đời sống biển và duy trì cân bằng hệ sinh thái.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span>Xem thêm</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
       </article>
     </main>
 
-
-
-
-
     <!-- link script -->
     <script src="assets/js/script.js"></script>
-    
-   <!-- 
+
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

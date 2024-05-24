@@ -1,74 +1,70 @@
 :root {
+  /** màu sắc
+     */
 
-    /** màu sắc
-     */
-  
-    --bright-yellow-crayola: hsl(40, 100%, 50%);
-    --medium-turquoise: hsl(172, 48%, 59%);
-    --silver-chalice: hsl(0, 0%, 70%);
-    --eerie-black-1: hsl(0, 0%, 13%);
-    --eerie-black-2: hsl(0, 0%, 15%);
-    --eerie-black-3: hsl(228, 10%, 10%);
-    --raisin-black: hsl(220, 8%, 14%);
-    --granite-gray: hsl(0, 0%, 38%);
-    --sonic-silver: hsl(0, 0%, 47%);
-    --pistachio_50: hsla(86, 45%, 54%, 0.5);
-    --baby-powder: hsl(86, 41%, 97%);
-    --light-gray: hsl(0, 0%, 80%);
-    --pistachio: hsl(86, 45%, 54%);
-    --platinum: hsl(0, 0%, 91%);
-    --cultured: hsl(0, 0%, 94%);
-    --white-60: hsla(0, 0%, 100%, 0.6);
-    --white_50: hsla(0, 0%, 100%, 0.5);
-    --white_10: hsla(0, 0%, 100%, 0.1);
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 0%);
-    --jet: hsl(0, 0%, 18%);
-  
-    /**kiểu chữ
-     */
-  
-    --ff-oswald: 'Oswald', sans-serif;
-    --ff-inter: 'Inter', sans-serif;
-    --ff-roboto: 'Roboto', sans-serif;
-  
-    --fs-1: 13rem;
-    --fs-2: 4rem;
-    --fs-3: 3.5rem;
-    --fs-4: 3rem;
-    --fs-5: 2.4rem;
-    --fs-6: 2.2rem;
-    --fs-7: 2rem;
-    --fs-8: 1.8rem;
-    --fs-9: 1.5rem;
-    --fs-10: 1.4rem;
-  
-    --fw-300: 300;
-    --fw-500: 500;
-    --fw-600: 600;
-    --fw-700: 700;
-  
-    /**spacing: khoảng cách
-     */
-  
-    --section-padding: 80px;
-  
-    /**shadow: độ bóng tối
-     */
-  
-    --card-shadow: 0 5px 20px -8px hsla(0, 0%, 0%, 0.15);
-  
-    /**transition:chuyển tiếp
-     */
-  
-    --transition-1: 0.05s ease;
-    --transition-2: 0.25s ease;
-    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
-    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
-  
-  }
+  --bright-yellow-crayola: hsl(40, 100%, 50%);
+  --medium-turquoise: hsl(172, 48%, 59%);
+  --silver-chalice: hsl(0, 0%, 70%);
+  --eerie-black-1: hsl(0, 0%, 13%);
+  --eerie-black-2: hsl(0, 0%, 15%);
+  --eerie-black-3: hsl(228, 10%, 10%);
+  --raisin-black: hsl(220, 8%, 14%);
+  --granite-gray: hsl(0, 0%, 38%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --pistachio_50: hsla(86, 45%, 54%, 0.5);
+  --baby-powder: hsl(86, 41%, 97%);
+  --light-gray: hsl(0, 0%, 80%);
+  --pistachio: hsl(86, 45%, 54%);
+  --platinum: hsl(0, 0%, 91%);
+  --cultured: hsl(0, 0%, 94%);
+  --white-60: hsla(0, 0%, 100%, 0.6);
+  --white_50: hsla(0, 0%, 100%, 0.5);
+  --white_10: hsla(0, 0%, 100%, 0.1);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --jet: hsl(0, 0%, 18%);
 
+  /**kiểu chữ
+     */
 
+  --ff-oswald: "Oswald", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+  --ff-roboto: "Roboto", sans-serif;
+
+  --fs-1: 13rem;
+  --fs-2: 4rem;
+  --fs-3: 3.5rem;
+  --fs-4: 3rem;
+  --fs-5: 2.4rem;
+  --fs-6: 2.2rem;
+  --fs-7: 2rem;
+  --fs-8: 1.8rem;
+  --fs-9: 1.5rem;
+  --fs-10: 1.4rem;
+
+  --fw-300: 300;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /**spacing: khoảng cách
+     */
+
+  --section-padding: 80px;
+
+  /**shadow: độ bóng tối
+     */
+
+  --card-shadow: 0 5px 20px -8px hsla(0, 0%, 0%, 0.15);
+
+  /**transition:chuyển tiếp
+     */
+
+  --transition-1: 0.05s ease;
+  --transition-2: 0.25s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
 
 /*-----------------------------------*\
   #RESET
@@ -82,7 +78,9 @@
   box-sizing: border-box;
 }
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
 a {
   text-decoration: none;
@@ -96,11 +94,17 @@ time,
 input,
 strong,
 button,
-ion-icon { display: block; }
+ion-icon {
+  display: block;
+}
 
-img { height: auto; }
+img {
+  height: auto;
+}
 
-ion-icon { pointer-events: none; }
+ion-icon {
+  pointer-events: none;
+}
 
 input,
 button {
@@ -109,13 +113,21 @@ button {
   font: inherit;
 }
 
-input { width: 100%; }
+input {
+  width: 100%;
+}
 
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+}
 
-:focus-visible { outline-offset: 4px; }
+:focus-visible {
+  outline-offset: 4px;
+}
 
-::selection { background-color: var(--white_10); }
+::selection {
+  background-color: var(--white_10);
+}
 
 html {
   font-family: var(--ff-roboto);
@@ -131,295 +143,488 @@ body {
   overflow-x: 300vh;
 }
 
-::-webkit-scrollbar { width: 13px; }
+::-webkit-scrollbar {
+  width: 13px;
+}
 
-::-webkit-scrollbar-track { background-color: hsl(0, 0%, 95%); }
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 95%);
+}
 
-::-webkit-scrollbar-thumb { background-color: var(--pistachio); }
-  
+::-webkit-scrollbar-thumb {
+  background-color: var(--pistachio);
+}
+
 /*--------------------------------- Phần đầu: Header -------------------------*/
 .lang-switch,
+.header-action {
+  display: none;
+}
 
-.header-action { display: none;};
-
-.header{
-    position: fixed;  /* Thiết lập phần tử ở vị trí cố định so với cửa sổ trình duyệt. Phần tử này sẽ luôn ở cùng một vị trí ngay cả khi bạn cuộn trang. */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent; /* Đặt màu nền của phần tử là trong suốt. */
-    padding-block: 18px;   /* Thiết lập khoảng cách đệm trên và dưới của phần tử */
-    z-index: 4;    /* Thuộc tính này điều chỉnh thứ tự xếp chồng của phần tử, tức là phần tử nào có z-index cao hơn sẽ nằm trên phần tử có z-index thấp hơn. */
+.header {
+  position: fixed; /* Thiết lập phần tử ở vị trí cố định so với cửa sổ trình duyệt. Phần tử này sẽ luôn ở cùng một vị trí ngay cả khi bạn cuộn trang. */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Đặt màu nền của phần tử là trong suốt. */
+  padding-block: 18px; /* Thiết lập khoảng cách đệm trên và dưới của phần tử */
+  z-index: 4; /* Thuộc tính này điều chỉnh thứ tự xếp chồng của phần tử, tức là phần tử nào có z-index cao hơn sẽ nằm trên phần tử có z-index thấp hơn. */
 }
 /* ::after chèn nội dung vào sau nội dung của một phần tử */
-.header::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 140px);  /*  Điều này giúp bạn tạo khoảng cách đều hai bên của đường kẻ. */
-    height: 1px;
-    background-color: var(--white_10);
-   
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(
+    100% - 140px
+  ); /*  Điều này giúp bạn tạo khoảng cách đều hai bên của đường kẻ. */
+  height: 1px;
+  background-color: var(--white_10);
 }
 
-.header.active{
-    background-color: var(--eerie-black-1);
-    box-shadow:  0 0 10px hsla(0, 0%, 100%, 0.8);
+.header.active {
+  background-color: var(--eerie-black-1);
+  box-shadow: 0 0 10px hsla(0, 0%, 100%, 0.8);
 }
-.header .container{
-    display: flex;/* Thiết lập phần tử này là một container Flexbox */
-    justify-content: space-between;
-    align-items:  center;
-    gap: 50px;   /* Thiết lập khoảng cách giữa các mục flex. Trong trường hợp này, mỗi mục flex sẽ có khoảng cách 50px so với mục flex liền kề. */
+.header .container {
+  display: flex; /* Thiết lập phần tử này là một container Flexbox */
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px; /* Thiết lập khoảng cách giữa các mục flex. Trong trường hợp này, mỗi mục flex sẽ có khoảng cách 50px so với mục flex liền kề. */
 }
 
 .logo {
-    color: var(--white);
-    font-size: 3.2rem;
-    font-family: var(--ff-oswald);
-    text-transform: uppercase;
-
+  color: var(--white);
+  font-size: 3.2rem;
+  font-family: var(--ff-oswald);
+  text-transform: uppercase;
 }
-.nav-open-btn{
-    color: var(--white);
-    font-size: 3.8rem;
-
+.nav-open-btn {
+  color: var(--white);
+  font-size: 3.8rem;
 }
 
-.navbar{
-    position: fixed;
-    background-color: var(--eerie-black-1);
-    top:100% ;
-    left: 0; /* Đặt phần tử ở cạnh trái của cửa sổ trình duyệt. */
-    width: 100%;
-    height: 100%;
-    outline: 1px solid var(--white_10); /* Thêm một viền ngoài (outline) cho phần tử với độ dày 1px */
-    display: flex;
-    flex-direction: column; /* Đặt hướng của các mục flex là theo cột, nghĩa là các mục flex sẽ xếp chồng lên nhau theo chiều dọc. */
-    z-index: 1;
-    visibility: hidden; /* Phần tử sẽ bị ẩn khỏi màn hình. Thuộc tính này có thể được thay đổi bằng JavaScript hoặc CSS để hiển thị phần tử. */
-    transition: 0.25s var(--cubic-in); /* Thiết lập hiệu ứng chuyển tiếp cho các thay đổi về thuộc tính: 0.25s */
-
+.navbar {
+  position: fixed;
+  background-color: var(--eerie-black-1);
+  top: 100%;
+  left: 0; /* Đặt phần tử ở cạnh trái của cửa sổ trình duyệt. */
+  width: 100%;
+  height: 100%;
+  outline: 1px solid var(--white_10); /* Thêm một viền ngoài (outline) cho phần tử với độ dày 1px */
+  display: flex;
+  flex-direction: column; /* Đặt hướng của các mục flex là theo cột, nghĩa là các mục flex sẽ xếp chồng lên nhau theo chiều dọc. */
+  z-index: 1;
+  visibility: hidden; /* Phần tử sẽ bị ẩn khỏi màn hình. Thuộc tính này có thể được thay đổi bằng JavaScript hoặc CSS để hiển thị phần tử. */
+  transition: 0.25s var(--cubic-in); /* Thiết lập hiệu ứng chuyển tiếp cho các thay đổi về thuộc tính: 0.25s */
 }
 .navbar.active {
-    transform: translateY(-100%);
-    visibility: visible;/*  hiển thị phần tử đó. */
-    transition: 0.5s var(--cubic-out); 
+  transform: translateY(-100%);
+  visibility: visible; /*  hiển thị phần tử đó. */
+  transition: 0.5s var(--cubic-out);
 }
 
 .nar-close-btn {
-    color: var(--white);
-    font-size: 24.rem;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  color: var(--white);
+  font-size: 24rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 .nar-close-btn ion-icon {
-   --ionicon-stroke-width: 60px; 
-    /* Đặt giá trị của biến CSS --ionicon-stroke-width là 60px. Biến này được Ionicons sử dụng để điều chỉnh độ rộng của nét vẽ của các biểu tượng. */
+  --ionicon-stroke-width: 60px;
+  /* Đặt giá trị của biến CSS --ionicon-stroke-width là 60px. Biến này được Ionicons sử dụng để điều chỉnh độ rộng của nét vẽ của các biểu tượng. */
 }
 
-.navbar > .logo{  /* Chọn phần tử có lớp .logo là con trực tiếp của phần tử có lớp .navbar. */
-    font-size: 4rem;
-    width: max-content; /* Đặt chiều rộng của phần tử vừa đủ để chứa nội dung bên trong nó.  */
-    margin-inline: auto ; /*  Căn giữa phần tử theo chiều ngang. */
-    margin-block-start: 50px;  /* tương đương với margin-top trong ngữ cảnh viết từ trái sang phải (ltr). */
+.navbar > .logo {
+  /* Chọn phần tử có lớp .logo là con trực tiếp của phần tử có lớp .navbar. */
+  font-size: 4rem;
+  width: max-content; /* Đặt chiều rộng của phần tử vừa đủ để chứa nội dung bên trong nó.  */
+  margin-inline: auto; /*  Căn giữa phần tử theo chiều ngang. */
+  margin-block-start: 50px; /* tương đương với margin-top trong ngữ cảnh viết từ trái sang phải (ltr). */
 }
 .navbar-list {
-    max-width: 400px;
-    width: 100%;
-    margin: auto;
-    /* Thiết lập các lề tự động để căn giữa phần tử.  */
-    padding-inline: 10px;
-    opacity: 0;
-    /* Đặt độ mờ của phần tử là 0. Phần tử sẽ không hiển thị trên trang web vì nó là không thể nhìn thấy. */
-    transition: 0.5s ease;
-    /* hiệu ứng chuyển tiếp sẽ mượt mà trong 0.5 giây với hàm chuyển đổi là ease, tạo hiệu ứng chuyển đổi tự nhiên và mềm mại. */
-    transition-delay: 0s;
-    /* Thiết lập độ trễ cho hiệu ứng chuyển tiếp. */
-  }
-  
-  .navbar.active .navbar-list {
-    opacity: 1;
-    /* xác định độ mờ của phần tử. */
-    transition-delay: 0.25s;
-  }
-  
-  .navbar-link {
-    color: var(--white);
-    font-size: var(--fs-9);
-    font-weight: var(--fw-500);
-    text-transform: uppercase;
-    /* Chuyển đổi toàn bộ văn bản trong phần tử thành chữ in hoa. */
-    display: flex;
-    justify-content: space-between;
-    /* Căn các phần tử con bên trong theo chiều ngang sao cho chúng được phân bố đều với khoảng trống giữa các phần tử. */
-    align-items: center;
-    padding-inline: 10px 15px;
-    padding-block: 8px;
-    transition: var(--transition-1);
-    /* Thiết lập hiệu ứng chuyển tiếp */
-  }
-  
-  .navbar-link:is(:hover, :focus) { background-color: var(--pistachio); }
-  
-  
-  
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  /* Thiết lập các lề tự động để căn giữa phần tử.  */
+  padding-inline: 10px;
+  opacity: 0;
+  /* Đặt độ mờ của phần tử là 0. Phần tử sẽ không hiển thị trên trang web vì nó là không thể nhìn thấy. */
+  transition: 0.5s ease;
+  /* hiệu ứng chuyển tiếp sẽ mượt mà trong 0.5 giây với hàm chuyển đổi là ease, tạo hiệu ứng chuyển đổi tự nhiên và mềm mại. */
+  transition-delay: 0s;
+  /* Thiết lập độ trễ cho hiệu ứng chuyển tiếp. */
+}
+
+.navbar.active .navbar-list {
+  opacity: 1;
+  /* xác định độ mờ của phần tử. */
+  transition-delay: 0.25s;
+}
+
+.navbar-link {
+  color: var(--white);
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  /* Chuyển đổi toàn bộ văn bản trong phần tử thành chữ in hoa. */
+  display: flex;
+  justify-content: space-between;
+  /* Căn các phần tử con bên trong theo chiều ngang sao cho chúng được phân bố đều với khoảng trống giữa các phần tử. */
+  align-items: center;
+  padding-inline: 10px 15px;
+  padding-block: 8px;
+  transition: var(--transition-1);
+  /* Thiết lập hiệu ứng chuyển tiếp */
+}
+
+.navbar-link:is(:hover, :focus) {
+  background-color: var(--pistachio);
+}
+
 /* ------------------REUSED STYLE ------------------*/
 
-
-.container{
+.container {
   padding-inline: 15px;
-
 }
 .section-subtitle {
-color: var(--color, var(--pistachio));
-font-size: var(--fs, var(--fs-8));
-font-family: var(--ff, var(--ff-roboto));
-font-weight: var(--fw-600);
-display: flex;/*Để cho các phần tử con trở thành các item linh hoạt dễ dàng sắp xếp hoặc căn chỉnh*/
-align-items: center;
-gap: 10px;
+  color: var(--color, var(--pistachio));
+  font-size: var(--fs, var(--fs-8));
+  font-family: var(--ff, var(--ff-roboto));
+  font-weight: var(--fw-600);
+  display: flex; /*Để cho các phần tử con trở thành các item linh hoạt dễ dàng sắp xếp hoặc căn chỉnh*/
+  align-items: center;
+  gap: 10px;
 }
 
 .h1,
-.h2 { font-weight: var(--fw-300); }
+.h2 {
+  font-weight: var(--fw-300);
+}
 
 .h2,
-.h3 { line-height: 1.6; }
+.h3 {
+  line-height: 1.6;
+}
 
 .h2 {
-font-size: var(--fs-3);
-color: var(--eerie-black-2);
+  font-size: var(--fs-3);
+  color: var(--eerie-black-2);
 }
 
 .h3 {
-font-size: var(--fs-5);
-color: var(--eerie-black-2);
+  font-size: var(--fs-5);
+  color: var(--eerie-black-2);
 }
 
 .h4 {
-color: var(--white);
-font-size: var(--fs-6);
+  color: var(--white);
+  font-size: var(--fs-6);
 }
 .btn {
-position: relative;/*Để giữ của phần tử theo vị trí mặc định trong luồng tài liệu*/
-background-color: var(--btn-bg, var(--pistachio));
-color: var(--white);
-font-weight: var(--fw-600);
-padding: 12px 32px;
-display: flex;
-align-items: center;
-gap: 10px;
-transition: var(--transition-2);/*Được sử dụng để áp dụng hiệu ứng chuyển đổi cho 1 hoặc nhiều thuộc tính CSS của 1 phần tử*/
+  position: relative; /*Để giữ của phần tử theo vị trí mặc định trong luồng tài liệu*/
+  background-color: var(--btn-bg, var(--pistachio));
+  color: var(--white);
+  font-weight: var(--fw-600);
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(
+    --transition-2
+  ); /*Được sử dụng để áp dụng hiệu ứng chuyển đổi cho 1 hoặc nhiều thuộc tính CSS của 1 phần tử*/
 }
 
 .btn ion-icon {
---ionicon-stroke-width: 55px; /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
-font-size: 1.8rem;
+  --ionicon-stroke-width: 55px; /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
+  font-size: 1.8rem;
 }
 
 .btn:not(.btn-outline)::after {
-content: "";
-position: absolute;/*Để định vị phần tử dựa trên thẻ btn-outline */
-inset: 0;
-border: 1px solid var(--btn-bg, var(--pistachio));
-transform: translate(5px, 5px);
-transition: var(--transition-2);
+  content: "";
+  position: absolute; /*Để định vị phần tử dựa trên thẻ btn-outline */
+  inset: 0;
+  border: 1px solid var(--btn-bg, var(--pistachio));
+  transform: translate(5px, 5px);
+  transition: var(--transition-2);
 }
 
-.btn:is(:hover, :focus)::after { transform: translate(0, 0); }
+.btn:is(:hover, :focus)::after {
+  transform: translate(0, 0);
+}
 
-.btn-secondary { --btn-bg: var(--black); }
+.btn-secondary {
+  --btn-bg: var(--black);
+}
 
-.btn-secondary:is(:hover, :focus) { --btn-bg: var(--pistachio); }
+.btn-secondary:is(:hover, :focus) {
+  --btn-bg: var(--pistachio);
+}
 
 .btn-outline {
-border: 2px solid var(--white);
-background-color: transparent;
+  border: 2px solid var(--white);
+  background-color: transparent;
 }
 
 .btn-white {
---btn-bg: var(--platinum);
-color: var(--black);
+  --btn-bg: var(--platinum);
+  color: var(--black);
 }
 
-.section { padding-block: var(--section-padding); }
+.section {
+  padding-block: var(--section-padding);
+}
 /* ------------------HERO ------------------*/
 
 .hero {
-background-color: var(--eerie-black-1);
-color: var(--white);
-min-height: 700px;
-padding-block: 120px 60px;
-display: grid;
-align-items: center;
+  background-color: var(--eerie-black-1);
+  color: var(--white);
+  min-height: 700px;
+  padding-block: 120px 60px;
+  display: grid;
+  align-items: center;
 }
 
 .hero .section-subtitle {
---color: var(--white);
---ff: var(--ff-inter); /*Lưu trữ giá trị của các thuộc tính font-family*/
---fs: var(--fs-7); /*Lưu trữ giá trị của các thuộc tính font-size*/
+  --color: var(--white);
+  --ff: var(--ff-inter); /*Lưu trữ giá trị của các thuộc tính font-family*/
+  --fs: var(--fs-7); /*Lưu trữ giá trị của các thuộc tính font-size*/
 }
 
 .hero-title {
-font-size: var(--fs-2);
-margin-block: 30px;
-line-height: 1.2;
+  font-size: var(--fs-2);
+  margin-block: 30px;
+  line-height: 1.2;
 }
 
 .hero-text {
-font-family: var(--ff-inter);
-font-size: var(--fs-8);
-letter-spacing: -1px;/*Đặt khoảng cách giữa các ký tự*/
-max-width: 50ch;/* Đặt độ rộng cho các phần tử */
-margin-block-end: 30px;
+  font-family: var(--ff-inter);
+  font-size: var(--fs-8);
+  letter-spacing: -1px; /*Đặt khoảng cách giữa các ký tự*/
+  max-width: 50ch; /* Đặt độ rộng cho các phần tử */
+  margin-block-end: 30px;
 }
 /* ------------------#FEATURES ------------------*/
 .features {
-padding-block-start: 0;
-background-color: var(--eerie-black-1);
+  padding-block-start: 0;
+  background-color: var(--eerie-black-1);
 }
 
 .features-list {
-display: grid;/*Thiết lập một phần tử hiển thị dưới dạng lưới*/
-gap: 30px;/*Khoảng cách giữa các ô trong lưới*/
+  display: grid; /*Thiết lập một phần tử hiển thị dưới dạng lưới*/
+  gap: 30px; /*Khoảng cách giữa các ô trong lưới*/
 }
 
 .features-item {
-display: flex;
-align-items: flex-start; /*Căn chỉnh mục con về phía bắt đầu của trục chính*/
-gap: 25px;
+  display: flex;
+  align-items: flex-start; /*Căn chỉnh mục con về phía bắt đầu của trục chính*/
+  gap: 25px;
 }
 
 .features-item .item-icon {
-color: var(--pistachio);
-font-size: 5.5rem;
-margin-block-start: 10px;
-} 
-
-.features-item .item-icon ion-icon { --ionicon-stroke-width: 25px; } /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
-
-.features-item .item-title { margin-block-end: 10px; }
-
-.features-item .item-text {
-max-width: 25ch; /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
-color: var(--white_50);
-font-size: var(--fs-9);
+  color: var(--pistachio);
+  font-size: 5.5rem;
+  margin-block-start: 10px;
 }
 
+.features-item .item-icon ion-icon {
+  --ionicon-stroke-width: 25px;
+} /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
 
+.features-item .item-title {
+  margin-block-end: 10px;
+}
 
+.features-item .item-text {
+  max-width: 25ch; /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
+  color: var(--white_50);
+  font-size: var(--fs-9);
+}
 
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
 
+.about {
+  padding-block-start: 120px;
+}
 
+.about-banner {
+  position: relative;
+  max-width: max-content;
+  margin-block-end: 30px;
+}
 
+.deco-title {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-700);
+  white-space: nowrap;
+  line-height: 0.5;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--light-gray);
+  transform-origin: top left;
+  transform: rotate(0.25turn);
+  position: absolute;
+  top: 55%;
+  left: 100%;
+  z-index: -1;
+}
 
+.deco-img {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: -1;
+}
 
+.about-img {
+  max-width: max-content;
+  margin-block-end: 30px;
+}
 
+.about .section-subtitle {
+  margin-block-end: 10px;
+}
 
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-block: 25px 35px;
+}
 
+.tab-btn {
+  background-color: var(--platinum);
+  color: var(--granite-gray);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  padding: 10px 32px;
+}
 
+.tab-btn.active {
+  background-color: var(--pistachio);
+  color: var(--white);
+}
 
+.tab-list {
+  margin-block: 25px 50px;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 5px;
+}
+
+.tab-item .item-icon {
+  font-size: 3rem;
+  color: var(--pistachio);
+}
+
+.tab-text {
+  color: var(--eerie-black-2);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+}
+
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
+
+.cta-content {
+  background-color: var(--pistachio);
+  text-align: center;
+  padding: 50px 15px;
+  margin-block-end: 30px;
+}
+
+.cta .section-title {
+  color: var(--white);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  line-height: 1.2;
+  margin-block-end: 25px;
+}
+
+.cta .btn-outline {
+  margin-inline: auto;
+}
+
+.cta-banner {
+  background-color: var(--light-gray);
+}
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+.service {
+  background-color: var(--baby-powder);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-block-start: -200px;
+  padding-block-start: 200px;
+}
+
+.service .section-title {
+  margin-block: 10px 40px;
+}
+
+.service-list {
+  display: grid;
+  gap: 30px;
+}
+
+.service-card {
+  background-color: var(--white);
+  text-align: center;
+  padding: 45px 40px;
+  border-radius: 2px;
+  outline: 3px solid transparent;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition-2);
+}
+
+.service-card:is(:hover, :focus-within) {
+  outline-color: var(--pistachio);
+}
+
+.service-card .card-icon {
+  color: var(--pistachio);
+  font-size: 7rem;
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.service-card .card-icon ion-icon {
+  --ionicon-stroke-width: 20px;
+}
+
+.service-card .card-title {
+  letter-spacing: -1px;
+  margin-block: 10px;
+}
+
+.service-card .card-text {
+  font-family: var(--ff-inter);
+}
+
+.btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--silver-chalice);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  margin-block-start: 15px;
+}
+
+.btn-link span {
+  text-decoration: underline;
+}
