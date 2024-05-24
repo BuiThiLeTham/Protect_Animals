@@ -269,9 +269,145 @@ body {
   
 /* ------------------REUSED STYLE ------------------*/
 
-.container{
-    padding-inline: 15px;
 
+.container{
+  padding-inline: 15px;
+
+}
+.section-subtitle {
+color: var(--color, var(--pistachio));
+font-size: var(--fs, var(--fs-8));
+font-family: var(--ff, var(--ff-roboto));
+font-weight: var(--fw-600);
+display: flex;/*Để cho các phần tử con trở thành các item linh hoạt dễ dàng sắp xếp hoặc căn chỉnh*/
+align-items: center;
+gap: 10px;
+}
+
+.h1,
+.h2 { font-weight: var(--fw-300); }
+
+.h2,
+.h3 { line-height: 1.6; }
+
+.h2 {
+font-size: var(--fs-3);
+color: var(--eerie-black-2);
+}
+
+.h3 {
+font-size: var(--fs-5);
+color: var(--eerie-black-2);
+}
+
+.h4 {
+color: var(--white);
+font-size: var(--fs-6);
+}
+.btn {
+position: relative;/*Để giữ của phần tử theo vị trí mặc định trong luồng tài liệu*/
+background-color: var(--btn-bg, var(--pistachio));
+color: var(--white);
+font-weight: var(--fw-600);
+padding: 12px 32px;
+display: flex;
+align-items: center;
+gap: 10px;
+transition: var(--transition-2);/*Được sử dụng để áp dụng hiệu ứng chuyển đổi cho 1 hoặc nhiều thuộc tính CSS của 1 phần tử*/
+}
+
+.btn ion-icon {
+--ionicon-stroke-width: 55px; /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
+font-size: 1.8rem;
+}
+
+.btn:not(.btn-outline)::after {
+content: "";
+position: absolute;/*Để định vị phần tử dựa trên thẻ btn-outline */
+inset: 0;
+border: 1px solid var(--btn-bg, var(--pistachio));
+transform: translate(5px, 5px);
+transition: var(--transition-2);
+}
+
+.btn:is(:hover, :focus)::after { transform: translate(0, 0); }
+
+.btn-secondary { --btn-bg: var(--black); }
+
+.btn-secondary:is(:hover, :focus) { --btn-bg: var(--pistachio); }
+
+.btn-outline {
+border: 2px solid var(--white);
+background-color: transparent;
+}
+
+.btn-white {
+--btn-bg: var(--platinum);
+color: var(--black);
+}
+
+.section { padding-block: var(--section-padding); }
+/* ------------------HERO ------------------*/
+
+.hero {
+background-color: var(--eerie-black-1);
+color: var(--white);
+min-height: 700px;
+padding-block: 120px 60px;
+display: grid;
+align-items: center;
+}
+
+.hero .section-subtitle {
+--color: var(--white);
+--ff: var(--ff-inter); /*Lưu trữ giá trị của các thuộc tính font-family*/
+--fs: var(--fs-7); /*Lưu trữ giá trị của các thuộc tính font-size*/
+}
+
+.hero-title {
+font-size: var(--fs-2);
+margin-block: 30px;
+line-height: 1.2;
+}
+
+.hero-text {
+font-family: var(--ff-inter);
+font-size: var(--fs-8);
+letter-spacing: -1px;/*Đặt khoảng cách giữa các ký tự*/
+max-width: 50ch;/* Đặt độ rộng cho các phần tử */
+margin-block-end: 30px;
+}
+/* ------------------#FEATURES ------------------*/
+.features {
+padding-block-start: 0;
+background-color: var(--eerie-black-1);
+}
+
+.features-list {
+display: grid;/*Thiết lập một phần tử hiển thị dưới dạng lưới*/
+gap: 30px;/*Khoảng cách giữa các ô trong lưới*/
+}
+
+.features-item {
+display: flex;
+align-items: flex-start; /*Căn chỉnh mục con về phía bắt đầu của trục chính*/
+gap: 25px;
+}
+
+.features-item .item-icon {
+color: var(--pistachio);
+font-size: 5.5rem;
+margin-block-start: 10px;
+} 
+
+.features-item .item-icon ion-icon { --ionicon-stroke-width: 25px; } /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
+
+.features-item .item-title { margin-block-end: 10px; }
+
+.features-item .item-text {
+max-width: 25ch; /*Đặt độ dày của nét vẽ cho các biểu tượng của Ionic*/
+color: var(--white_50);
+font-size: var(--fs-9);
 }
 
 
