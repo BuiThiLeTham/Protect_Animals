@@ -1,3 +1,5 @@
 {
     "liveServer.settings.port": 5501
 }
+// là một thiết lập cấu hình cho phần mở rộng Live Server trong Visual Studio Code
+// Khóa này chỉ định số cổng mà Live Server sẽ sử dụng để phục vụ các trang web của bạn.
